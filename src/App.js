@@ -35,7 +35,7 @@ function App() {
   };
 
   return (
-    <div class>
+    <div class ="Padre">
       <h1>ATLESTAT WEB</h1>
       <label htmlFor="idInput">Ingrese ID: </label>
       <input
