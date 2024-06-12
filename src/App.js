@@ -9,7 +9,7 @@ function App() {
     // Function to make the GET request
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/users/${id}`);
+        const response = await fetch(`http://localhost:3003/users/${id}`);
         if (!response.ok) {
           setError(1);
           throw new Error('Network response was not ok');
@@ -50,6 +50,10 @@ function App() {
           <h2>Información del usuario:</h2>
           <h3>Usuario: {!error? (data.name) :("")}</h3>
           <h3>Email: {!error? (data.email) :("")}</h3>
+          <h3>dni: {!error? (data.dni) :("")}</h3>
+          <h3>adress: {!error? (data.adress) :("")}</h3>
+          <h3>age: {!error? (data.age) :("")}</h3>
+          <h3>type: {!error? (data.type) :("")}</h3>
         </div>
       ) : (
         <p>Loading...</p>
